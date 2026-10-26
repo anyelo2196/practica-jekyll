@@ -1,0 +1,15 @@
+---
+layout: default
+title: Climas de Venezuela
+---
+
+<h1>Regiones climáticas de Venezuela</h1>
+
+<ul>
+  {% for clima in site.climas %}
+    <li>
+      <h2>{{ clima.title }}</h2>
+      {{ clima.content }}
+    </li>
+  {% endfor %}
+</ul>
