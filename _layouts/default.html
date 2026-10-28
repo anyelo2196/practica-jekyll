@@ -1,14 +1,21 @@
+
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+    {% feed_meta %}
+    {% seo %}
   </head>
   <body>
     {% include navigation.html %}
+
+    {% if jekyll.environment == "production" %}
+      <p>Versión de producción del blog</p>
+    {% endif %}
+
     {{ content }}
   </body>
 </html>
-
 

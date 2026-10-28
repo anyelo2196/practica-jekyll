@@ -39,8 +39,14 @@ GEM
       safe_yaml (~> 1.0)
       terminal-table (>= 1.8, < 4.0)
       webrick (~> 1.7)
+    jekyll-feed (0.18.0)
+      jekyll (>= 3.7, < 5.0)
     jekyll-sass-converter (3.1.0)
       sass-embedded (~> 1.75)
+    jekyll-seo-tag (2.9.1)
+      jekyll (>= 3.8, < 5.0)
+    jekyll-sitemap (1.4.0)
+      jekyll (>= 3.7, < 5.0)
     jekyll-watch (2.2.1)
       listen (~> 3.0)
     json (2.7.2)
@@ -77,6 +83,9 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll
+  jekyll-feed
+  jekyll-seo-tag
+  jekyll-sitemap
 
 CHECKSUMS
   addressable (2.9.0)
@@ -94,7 +103,10 @@ CHECKSUMS
   http_parser.rb (0.8.1)
   i18n (1.15.2)
   jekyll (4.4.1)
+  jekyll-feed (0.18.0)
   jekyll-sass-converter (3.1.0)
+  jekyll-seo-tag (2.9.1)
+  jekyll-sitemap (1.4.0)
   jekyll-watch (2.2.1)
   json (2.7.2)
   kramdown (2.5.2)
